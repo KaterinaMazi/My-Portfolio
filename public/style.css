@@ -258,8 +258,8 @@ summary {
 }
 
 .circle {
-  width: 70px;
-  height: 70px;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -269,15 +269,20 @@ summary {
   position: relative;
 }
 
-.circle .num {
+.circle .icon {
   position: absolute;
   font-weight: 700;
-  color: var(--beige);
 }
 
 .circle-wrap {
   text-align: center;
   font-size: 14px;
+}
+
+.skill-icon {
+  width: 45px;
+  height: 45px;
+  display: inline-block;
 }
 
 
@@ -334,69 +339,6 @@ summary {
   color: var(--black);
   transform: scale(1.05);
   box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-}
-
-
-/* =========================
-   Creative Tabs
-   ========================= */
-.tabs {
-  margin: 20px 0;
-}
-
-.tab-controls {
-  display: flex;
-  gap: 8px;
-  margin-bottom: 14px;
-}
-
-.tab-controls input {
-  display: none;
-}
-
-.tab-controls label {
-  padding: 8px 12px;
-  background: rgba(255, 255, 255, 0.445);
-  border-radius: 8px;
-  cursor: pointer;
-  font-weight: 700;
-  font-size: 14px;
-}
-
-.tab-controls label:hover {
-  background: rgba(255,255,255,0.15);
-}
-
-.tab-content {
-  background: rgba(255, 255, 255, 0.445);
-  padding: 16px;
-  border-radius: 10px;
-  min-height: 150px;
-}
-
-#tab1:checked ~ .tabs .c1,
-#tab2:checked ~ .tabs .c2,
-#tab3:checked ~ .tabs .c3 {
-  display: block;
-}
-
-.tab-pane {
-  display: none;
-}
-
-.highlights {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 14px;
-  margin-top: 20px;
-}
-
-.highlight {
-  background: var(--beige);
-  color: var(--brown-dark);
-  padding: 14px;
-  border-radius: 10px;
-  font-size: 14px;
 }
 
 
@@ -578,10 +520,6 @@ details:hover {
   .circle {
     width: 80px;
     height: 80px;
-  }
-
-  .circle .num {
-    font-size: 11px;
   }
 
   .highlights {
