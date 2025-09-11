@@ -64,6 +64,33 @@ nav a:hover {
 
 
 /* =========================
+   GitHub Buttons for Projects
+   ========================= */
+.github-button {
+  background: none;       /* καθαρό background */
+  border-radius: 20px;
+  border-color:rgba(0, 255, 255, 0.379);          /* χωρίς περίγραμμα */
+  padding: 0;             /* χωρίς padding */
+  cursor: pointer;        /* δείχνει pointer στο hover */
+  margin-left: 8px;       /* μικρή απόσταση από το κείμενο */
+  transition: transform 0.2s ease, box-shadow 0.1s ease; /* ομαλή μεγέθυνση & σκιά */
+}
+
+.github-button img {
+  vertical-align: middle; /* κεντράρει κάθετα το icon με το κείμενο */
+  width: 30px;            /* πλάτος icon */
+  height: 30px;           /* ύψος icon */
+}
+
+/* Hover effect */
+.github-button:hover {
+  transform: scale(1.4);                      /* μεγέθυνση 20% */
+  box-shadow: 0 4px 12px rgba(138, 226, 255, 0.162);    /* σκιά γύρω από το button */
+}
+
+
+
+/* =========================
    Hero Section
    ========================= */
 .hero {
@@ -189,7 +216,6 @@ details {
 
 summary {
   cursor: pointer;
-  font-weight: 700;
   color: var(--blue-lighter);
 }
 
